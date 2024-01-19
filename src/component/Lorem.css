@@ -1,0 +1,18 @@
+
+h1{
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 70%;
+    margin: 2% auto;
+    text-align: left;
+
+
+}
+.container div{
+    padding: 4px;
+    border: 1px solid black;
+
+}
