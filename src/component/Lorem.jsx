@@ -16,10 +16,10 @@ const Lorem = () => {
   return (
     <>
       <h1>BELOW DATA IS FETCHED FROM LOPEM-IPSUM API USING REDUX</h1>
-      {loading && "loading...."}
+      {loading && <div className='loading'>loading....</div>}
       <div className='container'>
       {data?.text?.split(".").map((item,index)=>{
-        return <div key={index}>{item}</div>
+        return <div key={index} className='data'>{item}</div>
       })}
       </div>
       {error && <div>{error}</div>}
